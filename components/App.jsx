@@ -5,7 +5,7 @@ function App() {
   let [click, updateBoolean] = React.useState(false); //since we only want the h1 to change when we click on the button we will have have the variable click turn true when it is clicked and show whatever name the input has typed
 
   function updateValue(event) {
-    updateName(event.target.value);
+    updateName(event.target.value); //event.target is whatever object or element that handled the event. So the input element has the onChange eventlistener which calls this updateValue function when there is a change. So the event.target is the input element.
   }
 
   function submit() {
